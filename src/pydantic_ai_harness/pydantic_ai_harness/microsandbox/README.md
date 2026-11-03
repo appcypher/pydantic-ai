@@ -44,6 +44,8 @@ asyncio.run(main())
 
 ## Verification and limits
 
+The [runnable plotting example](../../../../examples/pydantic_ai_examples/microsandbox_plotting.py) includes the verification checks. Its [original charts and data](../../../../examples/pydantic_ai_examples/microsandbox_plotting_output/README.md) are included for review.
+
 Tested on macOS Apple silicon with microsandbox 0.7.13 and Pydantic AI 2.65.0. A live GPT-4.1 run generated 744 CSV rows and two valid SVG plots across separate runs sharing one workspace reference; the second run left the original CSV and heatmap byte-for-byte unchanged. The OpenAI credential stayed on the host.
 
 The live workspace conformance suite passes 35 checks and skips three: permission denial while running as guest root, a native-realpath-only check, and direct process-exit detection when background descendants retain output pipes. That last case is an observed SDK 0.7.13 limitation. Ordinary commands, cancellation, timeouts, filesystem operations, reattachment, and deletion are covered.
