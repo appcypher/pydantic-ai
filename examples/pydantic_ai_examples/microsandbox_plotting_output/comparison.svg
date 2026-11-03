@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SVG generated: Comparison of average hourly electricity usage, weekdays vs weekends -->
+<svg width="740" height="480" viewBox="0 0 740 480" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" style="background:#fff">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <g id="axes">
+    <line x1="70" y1="40" x2="70" y2="420" stroke="#333" stroke-width="2"/>
+    <line x1="70" y1="420" x2="690" y2="420" stroke="#333" stroke-width="2"/>
+  </g>
+  <g id="yticks" font-size="13" fill="#333">
+    <text x="50" y="425" text-anchor="end">0.0</text>
+    <text x="50" y="361" text-anchor="end">0.8</text>
+    <text x="50" y="302" text-anchor="end">1.6</text>
+    <text x="50" y="243" text-anchor="end">2.4</text>
+    <text x="50" y="184" text-anchor="end">3.2</text>
+    <text x="50" y="125" text-anchor="end">4.0</text>
+  </g>
+  <g id="yticklines" stroke="#ccc" stroke-width="1">
+    <line x1="70" y1="420" x2="690" y2="420"/>
+    <line x1="70" y1="361" x2="690" y2="361"/>
+    <line x1="70" y1="302" x2="690" y2="302"/>
+    <line x1="70" y1="243" x2="690" y2="243"/>
+    <line x1="70" y1="184" x2="690" y2="184"/>
+    <line x1="70" y1="125" x2="690" y2="125"/>
+  </g>
+  <g id="xticks" font-size="13" fill="#333">
+    <text x="97" y="440" text-anchor="middle">0</text>
+    <text x="157" y="440" text-anchor="middle">4</text>
+    <text x="217" y="440" text-anchor="middle">8</text>
+    <text x="277" y="440" text-anchor="middle">12</text>
+    <text x="337" y="440" text-anchor="middle">16</text>
+    <text x="397" y="440" text-anchor="middle">20</text>
+    <text x="457" y="440" text-anchor="middle">24</text>
+  </g>
+  <g id="xlabel">
+    <text x="380" y="470" text-anchor="middle" font-size="16" fill="#222">Hour of Day</text>
+  </g>
+  <g id="ylabel" transform="rotate(-90 20 230)">
+    <text x="20" y="230" text-anchor="middle" font-size="16" fill="#222">Avg. kWh Used</text>
+  </g>
+  <g id="weekday_series">
+    <polyline fill="none" stroke="#2475b3" stroke-width="3" points="
+        97,405.7  118,411.7  139,401.8  160,403.9  181,404.6  202,394.3  223,348.1  244,282.7 265,247.8 286,246.8 307,243.0 328,230.7 349,233.0 370,233.7 391,233.8 412,233.6 433,245.2 454,271.3 475,312.9 496,364.6 517,381.5 538,401.9 559,410.8 580,416.1 601,404.6 622,393.9
+      "/>
+    <text x="650" y="180" fill="#2475b3" font-weight="bold" font-size="15">Weekday</text>
+  </g>
+  <g id="weekend_series">
+    <polyline fill="none" stroke="#E35D24" stroke-width="3" points="
+        97,396.1  118,412.0  139,405.0  160,405.5  181,404.6  202,410.9  223,378.4  244,324.7 265,269.8 286,252.9 307,236.3 328,230.0 349,234.7 370,241.2 391,239.2 412,243.2 433,247.4 454,282.2 475,322.5 496,370.8 517,389.7 538,404.5 559,415.6 580,417.2 601,412.9 622,404.4
+      "/>
+    <text x="650" y="240" fill="#E35D24" font-weight="bold" font-size="15">Weekend</text>
+  </g>
+  <g id="legend">
+    <rect x="98" y="54" width="136" height="49" rx="6" fill="#f7f7f7" stroke="#ccc"/>
+    <line x1="110" y1="75" x2="130" y2="75" stroke="#2475b3" stroke-width="3"/>
+    <text x="140" y="80" font-size="15" fill="#2475b3">Weekday</text>
+    <line x1="110" y1="100" x2="130" y2="100" stroke="#E35D24" stroke-width="3"/>
+    <text x="140" y="105" font-size="15" fill="#E35D24">Weekend</text>
+  </g>
+  <text x="380" y="30" font-size="20" text-anchor="middle" fill="#222" font-weight="bold">Average Hourly Electricity Usage: Weekdays vs Weekends</text>
+</svg>

@@ -57,6 +57,7 @@ if TYPE_CHECKING:
     from .logfire import ManagedPrompt
     from .macroscope import Macroscope
     from .memory import Memory
+    from .microsandbox import Microsandbox, MicrosandboxBackend
     from .modal_sandbox import ModalSandbox, ModalSandboxBackend
     from .ordinal import Ordinal
     from .permissions import Permissions
@@ -136,6 +137,8 @@ __all__ = [
     'Macroscope',
     'ManagedPrompt',
     'Memory',
+    'Microsandbox',
+    'MicrosandboxBackend',
     'ModalSandbox',
     'ModalSandboxBackend',
     'Ordinal',
@@ -217,6 +220,7 @@ _CAPABILITY_EXPORTS = {
     'Macroscope': 'macroscope',
     'ManagedPrompt': 'logfire',
     'Memory': 'memory',
+    'Microsandbox': 'microsandbox',
     'ModalSandbox': 'modal_sandbox',
     'Ordinal': 'ordinal',
     'PGTaskDurability': 'pgtask',
@@ -265,6 +269,7 @@ _CONSTANT_EXPORTS = {
     'DockerSandboxBackend': 'docker_sandbox',
     'E2BSandboxBackend': 'e2b_sandbox',
     'LLM_API_KEY_ENV_PATTERNS': 'shell',
+    'MicrosandboxBackend': 'microsandbox',
     'ModalSandboxBackend': 'modal_sandbox',
     'READ_ONLY_TOOL_NAMES': 'filesystem',
     'SmolSandboxBackend': 'smol_sandbox',
