@@ -61,6 +61,7 @@ dbos = ["pydantic-ai-slim[dbos]=={{ major }}.{{ minor }}.{{ patch }}{% if distan
 logfire = ["logfire>=4.31.0", "pydantic-ai-slim[spec]=={{ major }}.{{ minor }}.{{ patch }}{% if distance %}.dev{{ distance }}+{{ commit }}{% endif %}", "pydantic-handlebars>=0.2.1"]
 render = ["render>=1.2.0"]
 modal = ["modal>=1.5.2"]
+microsandbox = ["microsandbox>=0.7.13,<0.8"]
 e2b = ["e2b>=2.48.0"]
 sprites = ["sprites-py>=0.7.0,<0.8"]
 # boxd's SDK is on 0.x, where a minor release can change the API, so cap per minor. 0.2.20 added
